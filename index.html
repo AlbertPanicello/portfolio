@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--HOME & MENU-->
+    <nav>
+        <ul class="menu">
+            <img class="logo" src="./iconsandpics/logo.jpg">
+            <li><a class="menu-item" href="#home" data-translate="home">Home</a></li>
+            <li><a class="menu-item" href="#about" data-translate="about">About</a></li>
+            <li><a class="menu-item" href="#skills" data-translate="skills">Skills</a></li>
+            <li><a class="menu-item" href="#projects" data-translate="projects">Projects</a></li>
+            <li><a class="menu-item" href="#contact" data-translate="contact">Contact</a></li>
+            <button  class="lbutton" id="language-toggle">➡️ Español</button>
+        </ul>
+    </nav>
+    <div class="root">
+        <div class="intro" id="home">
+            <img class="mypic" src = "./iconsandpics/image.png">
+            <div class="mainTitle">
+                <h1 data-translate="salutation">Hello!</h1>
+                <h1 data-translate="welcome">Welcome to my Portfolio!</h1>
+                
+                <a href="https://github.com/AlbertPanicello" target="_blank">
+                    <img class="g-icon" src = "./iconsandpics/github.png">
+                </a>
+                <a href="https://www.instagram.com/apani9/" target="_blank">
+                    <img class="i-icon" src = "./iconsandpics/instalogo.png">
+                </a>
+                
+            </div>
+        </div>
+    
+        <!--ABOUT-->
+        <div class="about" id="about">
+            <h2 data-translate="aboutTitle">About Me</h2>
+            <p data-translate="aboutText">Hello! My name is Albert Panicello, and I am a Computer Engineering student at
+                the Polytechnic University of Catalonia. In this portfolio, you will find
+                information about who I am, my projects, my technical and soft skills, among other things.
+                I am specializing in Software Engineering because I am passionate about both
+                front-end and back-end development, as well as video games.
+            </p>
+        </div>
+
+        <!--SKILLS-->
+        <div class="Tskills" id="skills">
+            <h2 data-translate="tskills">Skills</h2>
+            <ul class="Tskills-list">
+                <li class="Tskills-item">Front-end <span>➤</span> HTML <span>➤</span> CSS <span>➤</span>JavaScript</li>
+                <li class="Tskills-item">Frameworks <span>➤</span> React
+                <li class="Tskills-item">Back-end <span>➤</span>Next.js <span>➤</span>AWS</li>
+                <li class="Tskills-item" data-translate="programming">Programming <span>➤</span> C <span>➤</span> C++ <span>➤</span>
+                     C# <span>➤</span> Python <span>➤</span> Java </li>
+                <li class="Tskills-item" data-translate="databases">Databases<span>➤</span> SQL <span>➤</span> Postgres</li>
+                <li class="Tskills-item" data-translate="versionControl">Version control<span>➤</span> GitHub
+            </ul>
+        </div>
+        
+        <!--SOFT SKILLS-->
+        <div class="Tskills">
+            <h2 data-translate="softSkills">Soft Skills</h2>
+            <ul class="Tskills-list">
+                <li class="Tskills-item" data-translate="comms"><span>➤</span>Communication</li>
+                <li class="Tskills-item" data-translate="problemSolving"><span>➤</span>Problem-solving</li>
+                <li class="Tskills-item" data-translate="teamCollab"><span>➤</span>Teamwork & Collaboration</li>
+                <li class="Tskills-item" data-translate="adapt"><span>➤</span>Adaptability</li>
+                <li class="Tskills-item" data-translate="learn"><span>➤</span>Willing to learn</li>
+            </ul>
+        </div>
+
+        <!--Projects: https://pani9.itch.io/mason-4 , porfolio, react, algo de la uni?-->
+
+        
+        <div class="about" id="projects">
+            <h2 data-translate="projects">Projects</h2>
+            <p data-translate="projectexp">2D game developed in unity in a 2 week course</p>
+            <a href="https://pani9.itch.io/mason-4" target="_blank">
+                <img class="g-proj" src = "iconsandpics/game.jpg">
+            </a>
+
+            <p data-translate="projectmovie">Introduction to React with a movie searcher app</p>
+            <a href="https://AlbertPanicello.github.io/first-react-app/" target="_blank">
+                <img class="g-proj" src = "iconsandpics/react proj.jpg">
+            </a>
+
+            
+        </div>
+     
+
+        <!--CONTACT-->
+
+        <div class="contact" id="contact">
+            <form>
+                <h2 data-translate="contact">Contact</h2>
+                <div class="form_input">
+                    <label data-translate="nombre">Name</label>
+                    <input data-placeholder="name" placeholder="Name">
+                </div>
+                <div class="form_input">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="e-mail">
+                </div>
+                <div class="form_input">
+                    <label data-translate="message">Message</label>
+                    <textarea type="text" placeholder="Message" name="Message" data-placeholder="message"></textarea>
+                </div>
+                <div class="form_input submitButton">
+                    <input class="container__button" data-translate="sendButton" type="submit" value="Send!" >
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+    <script src="switchLanguage.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: linear-gradient(black, rgb(33, 12, 49));
+    color: white;
+    font-family: sans-serif;
+    padding-top: 100px;
+}
+
+nav {
+    background-color: #000000;
+    position: fixed;  /* Fija el menú en la parte superior */
+    width: 100%;
+    height: 60px;  /* Ocupa todo el ancho */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Se mantiene por encima de otros elementos */
+}
+
+.lbutton {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+
+    color: white;
+    background-color: rgb(144, 103, 198);
+    font-size: 15px;
+}
+
+.logo {
+    width: 30px;
+    position: absolute;
+    left: 0;
+    margin-left: 80px;
+}
+
+.menu-item::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+.menu-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .menu-item::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(144, 103, 198, 0.801);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+
+  
+
+.menu {
+    display: flex;
+    flex-grow: calc(1);
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+/*.menu-item:hover {
+    outline: 2px solid rgba(144, 103, 198, 0.801);
+    border-radius: 50px;
+}*/
+
+.root {
+    text-align: left;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    scroll-margin-top: 80px;
+    
+}
+
+.mainTitle {
+    margin-left: 80px;
+}
+
+.welcome {
+    margin-bottom: 50px;
+}
+
+.mypic {
+    width: 250px;
+    border-radius: 200px;
+    margin-bottom: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(255, 255, 255, 0.2);
+		transform: translatey(-5px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+.g-icon {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.g-icon:hover {
+
+    outline: 5px solid rgb(144, 103, 198);;
+    border-radius: 100%;
+}
+
+.i-icon {
+
+    width: 60px;
+    height: 40px;
+}
+
+.i-icon:hover {
+
+    outline: 5px solid rgb(144, 103, 198);;
+    border-radius: 100px;
+}
+
+.g-proj {
+    width: 400px;
+    height: 250px;
+}
+
+.g-proj:hover {
+
+    outline: 5px solid rgb(144, 103, 198);;
+}
+
+.about {
+    scroll-margin-top: 80px;
+    font-size: 18px;
+    margin: 0 80px;  
+    margin-bottom: 50px;
+}
+
+.Tskills {
+    scroll-margin-top: 80px;
+    font-size: 18px;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; 
+}
+
+.Tskills-list {
+    padding: 0;
+    margin-top: 0;
+}
+
+span {
+
+    color: rgb(144, 103, 198);
+    padding: 0 10px;
+}
+
+.Tskills-item {
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.contact {
+    scroll-margin-top: 80px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 0 80px;
+    font-size: 18px;
+
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;  
+}
+
+input, textarea {
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgb(212, 203, 203);
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: black;
+    margin-top: 10px;
+}
+
+textarea {
+    max-width: 40%;
+    min-width: 10px;
+    resize: none;
+    font-family: sans-serif;
+    min-height: 150px;
+}
+
+
+.submitButton {
+    margin-bottom: 70px;
+}
+
+.container__button {
+    color: white;
+    background-color: rgb(144, 103, 198);
+    font-size: 15px;
+}
